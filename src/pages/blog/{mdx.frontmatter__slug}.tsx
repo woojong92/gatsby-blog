@@ -6,8 +6,17 @@ import Seo from "../../components/seo";
 const BlogPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
-      {children}
+      {/*  {data.mdx.frontmatter.date} */}
+
+      <div
+        className="prose
+  prose-h1:font-bold prose-h1:text-xl
+  prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
+  p-4"
+      >
+        {children}
+        <slot />
+      </div>
     </Layout>
   );
 };

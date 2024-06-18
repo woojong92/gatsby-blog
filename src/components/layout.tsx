@@ -40,6 +40,11 @@ const Layout = ({ pageTitle, children }: LayoutProps) => {
       </header>
 
       <div className="mx-auto max-w-2xl mt-14 -z-50">{children}</div>
+
+      {/* <footer className="mt-auto px-[50px]">
+        Thank You for Visiting My Blog, Have a Good Day 😆
+        <br />© 2021 Developer Hyun, Powered By Gatsby.
+      </footer> */}
     </main>
   );
 };
